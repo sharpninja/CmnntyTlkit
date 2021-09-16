@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net5.0-windows10.0.20348.0</TargetFramework>
+        <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+        <RootNamespace>App2</RootNamespace>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+        <Platforms>x86;x64</Platforms>
+        <RuntimeIdentifiers>win10-x86;win10-x64</RuntimeIdentifiers>
+        <UseWinUI>true</UseWinUI>
+        <SupportedOSPlatformVersion>10.0.18362.0</SupportedOSPlatformVersion>
+        <Nullable>enable</Nullable>
+        <DebugType>embedded</DebugType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.ProjectReunion" Version="0.8.3" />
+        <PackageReference Include="Microsoft.ProjectReunion.Foundation" Version="0.8.3" />
+        <PackageReference Include="Microsoft.ProjectReunion.DWrite" Version="0.8.3" />
+        <PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="0.8.3" />
+        <PackageReference Include="Microsoft.ProjectReunion.InteractiveExperiences" Version="0.8.3" />
+        <Manifest Include="$(ApplicationManifest)" />
+    </ItemGroup>
+</Project>
